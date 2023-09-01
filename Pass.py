@@ -1,12 +1,13 @@
+# Replace 'Text.txt' with the file path of the file in which you want save the password. 
 file_name = 'Text.txt' 
 wtd = input("Enter what to do (Add/Update/Delete): ")
 
 
-'''with open('Text.txt', 'r') as file:
-    Pass = file.read()'''
-Pass=""
+with open('Text.txt', 'r') as file:       
+    Pass = file.read()
+
 def clear_data(file_name):
-    with open(file_name, 'w') as file:
+    with open(file_name, 'w') as file:     
         file.write("")
 
 
